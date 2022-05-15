@@ -16,7 +16,7 @@ library.add(fas, fab);
 
 function App() {
   return (
-    <Router>
+    <Router basename="/react_recreate_ohmyfood">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/menu/:name" element={<Menu />} />
