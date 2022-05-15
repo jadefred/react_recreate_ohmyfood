@@ -1,9 +1,17 @@
 import React from "react";
+import { useParams } from "react-router-dom";
+import { restaurantList } from "../assets/data/restaurantList";
+
+//component
+import MenuHeader from "../components/MenuHeader";
 
 function Menu() {
+  const { name } = useParams();
+  const selectedRestaurant = restaurantList.filter((i) => i.name.toLowerCase().split(" ").join("-") === name);
+
   return (
     <>
-      <h1>This is menu page</h1>
+      <MenuHeader restaurant={selectedRestaurant[0]} />
     </>
   );
 }
