@@ -4,7 +4,6 @@ import React from "react";
 import Pageloader from "../components/Pageloader";
 import HomeHeader from "../components/HomeHeader";
 import Restaurant from "../components/Restaurant";
-import Footer from "../components/Footer";
 
 function Home() {
   return (
@@ -12,7 +11,6 @@ function Home() {
       <Pageloader />
       <HomeHeader />
       <Restaurant />
-      <Footer />
     </>
   );
 }
