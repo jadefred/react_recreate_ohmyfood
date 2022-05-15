@@ -1,0 +1,141 @@
+/*header*/
+h1 {
+  font-family: "Shrikhand";
+  text-align: center;
+  margin: 0.5rem auto;
+}
+
+.location {
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  padding: 0.9rem;
+  background: #e6e3e3;
+  box-shadow: inset 0px 5px 3px -1px rgba(0, 0, 0, 0.1);
+}
+
+.location-icon,
+.location input {
+  margin: 0;
+}
+
+.location-icon {
+  margin-right: 1rem;
+}
+
+.location input {
+  border: none;
+  background-color: #e6e3e3;
+  font-size: 1.1em;
+  width: 8rem;
+}
+
+/*introduction and explore button*/
+.intro {
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding: 1rem 0 2rem 0;
+}
+
+.intro h2 {
+  margin-bottom: 0.8rem;
+}
+
+.intro p {
+  font-weight: 300;
+}
+
+.intro button {
+  text-align: center;
+  background: linear-gradient(0deg, #9356dc 0%, #ff79da 100%);
+  border: none;
+  color: white;
+  padding: 0.8em 2em;
+  font-size: 17px;
+  border-radius: 50px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.16);
+}
+
+.intro button:hover {
+  opacity: 0.8;
+  transition-duration: 300ms;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+/*fonctions*/
+.fonction {
+  background-color: white;
+  padding: 2rem 0;
+}
+
+.fonction h2 {
+  width: 95%;
+  margin: 0 auto 1rem auto;
+}
+
+.fonction h2 {
+  margin-top: 0;
+}
+
+.fonction ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  padding: 0;
+  width: 90%;
+  margin: auto;
+}
+@media (min-width: 1024px) {
+  .fonction ul {
+    width: 95%;
+    flex-direction: row;
+    justify-content: space-between;
+    column-gap: 3rem;
+  }
+}
+
+.fonction__num {
+  position: absolute;
+  left: -1rem;
+  top: 0.6rem;
+  background-color: #9356dc;
+  color: white;
+  font-size: 1.1rem;
+  padding: 0.3rem 0.65rem;
+  border-radius: 50%;
+  transform: scale(0.7);
+  margin: 0;
+}
+
+.fonction li {
+  position: relative;
+  background-color: #f2f2f2;
+  padding: 1rem 2rem;
+  width: auto;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.16);
+}
+@media (min-width: 1024px) {
+  .fonction li {
+    flex-grow: 1;
+  }
+}
+
+.fonction li:hover {
+  background-color: rgba(147, 86, 220, 0.2);
+  transition: all 300ms ease;
+}
+
+.fonction li:hover i {
+  color: #9356dc;
+  transition: all 500ms ease;
+}
+
+.fonction i {
+  margin-right: 1rem;
+  color: rgba(0, 0, 0, 0.6);
+}
