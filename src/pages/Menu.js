@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useParams } from "react-router-dom";
 import { restaurantList } from "../assets/data/restaurantList";
 
@@ -12,7 +12,10 @@ function Menu() {
   const { name } = useParams();
   //filter the selected restaurant and pass it to children elements as props
   const selectedRestaurant = restaurantList.filter((i) => i.name.toLowerCase().split(" ").join("-") === name);
-
+  //change tab name when the frist time render
+  useEffect(() => {
+    document.title = selectedRestaurant[0].name;
+  });
   return (
     <>
       <MenuHeader />
