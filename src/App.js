@@ -18,7 +18,7 @@ function App() {
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/menu" element={<Menu />} />
+        <Route path="/menu:restaurant-name" element={<Menu />} />
       </Routes>
       <Footer />
     </Router>

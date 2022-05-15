@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./css/restaurant.css";
 import { restaurantList } from "../assets/data/restaurantList";
 
@@ -11,7 +12,7 @@ function Restaurant() {
         {restaurantList.map((resto) => {
           return (
             <div className="restaurant-card" key={resto.id}>
-              <a href="la_palette_du_gout.html">
+              <Link to={`menu/${resto.name.toLowerCase().split(" ").join("-")}`}>
                 {/*see if it's a new restaurant, if so, add tag*/}
                 {resto.isNew ? <div className="card__new-tag">Nouveau</div> : ""}
                 <img src={require(`../assets/restaurants/${resto.img}`)} alt={resto.name} />
@@ -22,7 +23,7 @@ function Restaurant() {
                   </div>
                   <i className="fa-regular fa-heart"></i>
                 </div>
-              </a>
+              </Link>
             </div>
           );
         })}
