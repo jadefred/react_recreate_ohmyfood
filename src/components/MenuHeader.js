@@ -3,7 +3,7 @@ import "./css/menuHeader.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { Link } from "react-router-dom";
 
-function MenuHeader(props) {
+function MenuHeader() {
   return (
     <>
       <header>
@@ -12,10 +12,6 @@ function MenuHeader(props) {
           <FontAwesomeIcon className="arrow-left" icon={["fa", "arrow-left"]} />
         </Link>
       </header>
-
-      <div className="banner">
-        <img src={require(`../assets/restaurants/${props.restaurant.img}`)} alt={props.restaurant.name} />
-      </div>
     </>
   );
 }

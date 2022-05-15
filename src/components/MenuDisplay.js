@@ -1,10 +1,10 @@
 import React from "react";
-import "./css/menuBackground.css";
+import "./css/menuDisplay.css";
 import Entrees from "./Entrees";
 import Plats from "./Plats";
 import Desserts from "./Desserts";
 
-function MenuBackground(props) {
+function MenuDisplay(props) {
   return (
     <>
       <main>
@@ -18,9 +18,13 @@ function MenuBackground(props) {
           <Plats dishes={props.restaurant.menus} />
           <Desserts dishes={props.restaurant.menus} />
         </section>
+
+        <div className="button-box">
+          <button type="button">Commander</button>
+        </div>
       </main>
     </>
   );
 }
 
-export default MenuBackground;
+export default MenuDisplay;

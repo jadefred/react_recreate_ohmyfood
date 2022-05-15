@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 //components
 import Home from "./pages/Home";
 import Menu from "./pages/Menu";
+import NotFound from "./pages/NotFound";
 import Footer from "./components/Footer";
 
 //font awesome
@@ -19,6 +20,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/menu/:name" element={<Menu />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
       <Footer />
     </Router>

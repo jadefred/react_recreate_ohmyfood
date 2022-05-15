@@ -4,6 +4,7 @@ import { restaurantList } from "../assets/data/restaurantList";
 
 //component
 import MenuHeader from "../components/MenuHeader";
+import MenuImg from "../components/MenuImg";
 import MenuDisplay from "../components/MenuDisplay";
 
 function Menu() {
@@ -14,7 +15,8 @@ function Menu() {
 
   return (
     <>
-      <MenuHeader restaurant={selectedRestaurant[0]} />
+      <MenuHeader />
+      <MenuImg restaurant={selectedRestaurant[0]} />
       <MenuDisplay restaurant={selectedRestaurant[0]} />
     </>
   );
