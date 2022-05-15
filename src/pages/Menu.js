@@ -4,14 +4,18 @@ import { restaurantList } from "../assets/data/restaurantList";
 
 //component
 import MenuHeader from "../components/MenuHeader";
+import MenuDisplay from "../components/MenuDisplay";
 
 function Menu() {
+  //get restaurant name by searching params
   const { name } = useParams();
+  //filter the selected restaurant and pass it to children elements as props
   const selectedRestaurant = restaurantList.filter((i) => i.name.toLowerCase().split(" ").join("-") === name);
 
   return (
     <>
       <MenuHeader restaurant={selectedRestaurant[0]} />
+      <MenuDisplay restaurant={selectedRestaurant[0]} />
     </>
   );
 }

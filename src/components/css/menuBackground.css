@@ -1,0 +1,54 @@
+main {
+  position: relative;
+  top: -3rem;
+  background-color: #f2f2f2;
+  border-radius: 30px;
+}
+@media (min-width: 1024px) {
+  main {
+    position: static;
+    border-radius: 0;
+  }
+}
+
+.name-and-heart {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  padding-top: 1.5rem;
+}
+@media (min-width: 1024px) {
+  .name-and-heart {
+    width: 95%;
+  }
+}
+
+.name-and-heart h2 {
+  font-family: "Shrikhand";
+  margin: 0;
+}
+
+.name-and-heart i {
+  font-size: 24px;
+}
+
+/*menu*/
+.menu {
+  width: 90%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 2rem;
+}
+@media (min-width: 1024px) {
+  .menu {
+    width: 95%;
+    max-width: 1800px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    column-gap: 2rem;
+  }
+}
+
