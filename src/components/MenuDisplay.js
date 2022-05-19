@@ -1,8 +1,6 @@
 import React from "react";
 import "./css/menuDisplay.css";
-import Entrees from "./Entrees";
-import Plats from "./Plats";
-import Desserts from "./Desserts";
+import AllDishes from "./AllDishes";
 
 function MenuDisplay(props) {
   return (
@@ -14,9 +12,7 @@ function MenuDisplay(props) {
         </div>
 
         <section className="menu">
-          <Entrees dishes={props.restaurant.menus} />
-          <Plats dishes={props.restaurant.menus} />
-          <Desserts dishes={props.restaurant.menus} />
+          <AllDishes dishes={props.restaurant.menus} />
         </section>
 
         <div className="button-box">
